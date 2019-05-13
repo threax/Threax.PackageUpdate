@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threax.PackageUpdate", "Threax.PackageUpdate\Threax.PackageUpdate.csproj", "{A43516C2-CB81-4F66-A210-E2F733D44464}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threax.PackageUpdate", "Threax.PackageUpdate\Threax.PackageUpdate.csproj", "{A43516C2-CB81-4F66-A210-E2F733D44464}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threax.PackageUpdate.Nuget", "Threax.PackageUpdate.Nuget\Threax.PackageUpdate.Nuget.csproj", "{D2AB2A4E-4642-4887-AD04-9BED5CF2F08E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threax.PackageUpdate.Nuget", "Threax.PackageUpdate.Nuget\Threax.PackageUpdate.Nuget.csproj", "{D2AB2A4E-4642-4887-AD04-9BED5CF2F08E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threax.PackageUpdate.Npm", "Threax.PackageUpdate.Npm\Threax.PackageUpdate.Npm.csproj", "{F1709B2E-D76B-4343-8425-BDB487A8FBDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threax.PackageUpdate.Npm", "Threax.PackageUpdate.Npm\Threax.PackageUpdate.Npm.csproj", "{F1709B2E-D76B-4343-8425-BDB487A8FBDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threax.PackageUpdate.AzureDevOps", "Threax.PackageUpdate.AzureDevOps\Threax.PackageUpdate.AzureDevOps.csproj", "{DD5E2A8C-E327-43EB-9F66-6E2C00DD3198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F1709B2E-D76B-4343-8425-BDB487A8FBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1709B2E-D76B-4343-8425-BDB487A8FBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1709B2E-D76B-4343-8425-BDB487A8FBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5E2A8C-E327-43EB-9F66-6E2C00DD3198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5E2A8C-E327-43EB-9F66-6E2C00DD3198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5E2A8C-E327-43EB-9F66-6E2C00DD3198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5E2A8C-E327-43EB-9F66-6E2C00DD3198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
