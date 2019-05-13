@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threax.PackageUpdate", "Threax.PackageUpdate\Threax.PackageUpdate.csproj", "{A43516C2-CB81-4F66-A210-E2F733D44464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threax.PackageUpdate.Nuget", "Threax.PackageUpdate.Nuget\Threax.PackageUpdate.Nuget.csproj", "{D2AB2A4E-4642-4887-AD04-9BED5CF2F08E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threax.PackageUpdate.Npm", "Threax.PackageUpdate.Npm\Threax.PackageUpdate.Npm.csproj", "{F1709B2E-D76B-4343-8425-BDB487A8FBDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A43516C2-CB81-4F66-A210-E2F733D44464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43516C2-CB81-4F66-A210-E2F733D44464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43516C2-CB81-4F66-A210-E2F733D44464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43516C2-CB81-4F66-A210-E2F733D44464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2AB2A4E-4642-4887-AD04-9BED5CF2F08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2AB2A4E-4642-4887-AD04-9BED5CF2F08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2AB2A4E-4642-4887-AD04-9BED5CF2F08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2AB2A4E-4642-4887-AD04-9BED5CF2F08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1709B2E-D76B-4343-8425-BDB487A8FBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1709B2E-D76B-4343-8425-BDB487A8FBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1709B2E-D76B-4343-8425-BDB487A8FBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1709B2E-D76B-4343-8425-BDB487A8FBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9067793-616C-49DC-A125-FF5316DAABBE}
+	EndGlobalSection
+EndGlobal

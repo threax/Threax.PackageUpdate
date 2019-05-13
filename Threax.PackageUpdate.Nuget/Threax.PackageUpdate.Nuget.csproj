@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Threax.PackageUpdate\Threax.PackageUpdate.csproj" />
+    <PackageReference Include="NuGet.Protocol.Core.v3" Version="4.2.0" />
+    <PackageReference Include="NuGet.Versioning" Version="5.0.0" />
+    <PackageReference Include="Semver" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>
