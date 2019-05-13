@@ -3,6 +3,14 @@ This library provides helper classes to check for updates in nuget and npm packa
 
 This library just helps you find updates to upstream packages. It does not help you install or update them in your projects.
 
+## NuGet Packages
+This library is split into several NuGet packages since there are lots of dependencies to make each one work even though they are relatively simple. You don't want to have to include a bunch of dependencies you don't really need in your project.
+
+* Threax.PackageUpdate - The core library.
+* Threax.PackageUpdate.AzureDevOps - Check for updates for both npm and nuget from Azure DevOps package feeds.
+* Threax.PackageUpdate.Npm - Check for updates from npmjs.com.
+* Threax.PackageUpdate.Nuget - Check for updates from nuget.org.
+
 ## Checking for Updates
 The main class that will look for updates is UpdateChecker. The following examples show how to build one of these up. You can add or remove sources as you need.
 
