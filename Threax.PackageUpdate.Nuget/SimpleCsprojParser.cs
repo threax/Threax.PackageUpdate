@@ -8,16 +8,17 @@ using System.Xml.Linq;
 
 namespace Threax.PackageUpdate.Nuget
 {
-    /**
-     * It would be better to not need this and instead use the Project class from Microsoft.Build. However,
-     * that library will fail to parse the csproj files when running under .net core with the error:
-     * Microsoft.Build Microsoft.Build.Exceptions.InvalidProjectFileException: 'The SDK 'Microsoft.NET.Sdk.Web' specified could not be found.
-     * There are fixes but all of them are complicated and unreliable. This also looks like you have to have the sdk
-     * installed on the target machine and that may not be the case where this app is deployed.
-     * 
-     * Csproj files are xml files, so just use linq2xml to read the package names. That's all this is trying to do anyway.
-     */
-
+    /// <summary>
+    /// This class will do a simple parse of a csproj file using linq2xml.
+    /// </summary>
+    ///<remarks>
+    /// It would be better to not need this and instead use the Project class from Microsoft.Build.However,
+    /// that library will fail to parse the csproj files when running under.net core with the error:
+    /// Microsoft.Build Microsoft.Build.Exceptions.InvalidProjectFileException: 'The SDK 'Microsoft.NET.Sdk.Web' specified could not be found.
+    /// There are fixes but all of them are complicated and unreliable.This also looks like you have to have the sdk
+    /// installed on the target machine and that may not be the case where this app is deployed.
+    /// Csproj files are xml files, so just use linq2xml to read the package names. That's all this is trying to do anyway.
+    /// </remarks>
     public class SimpleCsprojParser
     {
         private String projectPath;

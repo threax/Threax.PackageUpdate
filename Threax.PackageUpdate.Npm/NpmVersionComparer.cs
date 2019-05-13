@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Threax.PackageUpdate.Nuget
+namespace Threax.PackageUpdate.Npm
 {
     public class NpmVersionComparer : IVersionComparer
     {

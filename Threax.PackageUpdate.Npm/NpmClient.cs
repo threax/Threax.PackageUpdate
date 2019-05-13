@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -10,11 +11,24 @@ namespace Threax.PackageUpdate.Npm
 {
     public class NpmClient : HttpClient
     {
-        private String baseUrl = "https://registry.npmjs.com/";
+        private String baseUrl;
+
+        public NpmClient()
+            :this("https://registry.npmjs.com/")
+        {
+
+        }
+
+        public NpmClient(String baseUrl)
+        {
+            this.baseUrl = baseUrl;
+        }
 
         public async Task<NpmPackageInfo> GetPackageInfo(String name)
         {
-            using(var request = new HttpRequestMessage(HttpMethod.Get, baseUrl + name))
+            var builder = new UriBuilder(baseUrl);
+            builder.Path = Path.Combine(builder.Path, name);
+            using(var request = new HttpRequestMessage(HttpMethod.Get, builder.Uri))
             {
                 using(var response = await this.SendAsync(request))
                 {
@@ -32,26 +46,6 @@ namespace Threax.PackageUpdate.Npm
                     var json = await response.Content.ReadAsStringAsync();
                     return JsonConvert.DeserializeObject<NpmPackageInfo>(json);
                 }
-            }
-        }
-    }
-
-    public class NpmPackageInfo
-    {
-        public String Name { get; set; }
-
-        [JsonProperty("dist-tags")]
-        public Dictionary<String, String> DistTags { get; set; }
-
-        public String LatestVersion
-        {
-            get
-            {
-                if (DistTags.TryGetValue("latest", out var latest))
-                {
-                    return latest;
-                }
-                return "0.0.0";
             }
         }
     }
