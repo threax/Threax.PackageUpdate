@@ -33,6 +33,14 @@ namespace Threax.PackageUpdate.Nuget
             }
         }
 
+        public String TargetFramework
+        {
+            get
+            {
+                return root.Descendants("TargetFramework").FirstOrDefault()?.Value;
+            }
+        }
+
         public IEnumerable<PackageInfo> PackageInfo
         {
             get
