@@ -47,3 +47,8 @@ using (var feedClient = await connection.GetClientAsync<FeedClient>())
 }
 ```
 This will check both Azure DevOps and Nuget.org for package updates. You can add as many package sources as you need and the highest non preview version from all of them will be found and returned.
+
+### Deployment Notes
+If you try to deploy the nuget update checking library in IIS make sure you have a user profile loaded. Without one the user nuget configuration cannot be found and the library will throw an exception.
+
+To enable this go to the app pool in IIS and click Advanced Settings. Set the Load User Profile setting to true. Once this is done the update checker should work.
